@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <!-- site metas -->
-<title>Blog</title>
+<title>Contact</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content=""> 
@@ -44,8 +44,8 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="logo_main" href="index.html">CoPal</a>           
-             </li>
+              <a class="logo_main" href="index.html">CoPal</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="blog.html">Blog</a>
             </li>
@@ -59,7 +59,7 @@
         </div>
       </nav>
       <nav class="mobile_header navbar navbar-expand-lg navbar-light bg-light">
-        <div class="logo_main"><a class="logo_main" href="index.html">CoPal</a></div>
+        <div class="logo_main"><a class="logo_main" href="index.html">CoPal</a></a></div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2"aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -72,7 +72,7 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="logo_main" href="index.html">CoPal</a>        
+              <a class="logo_main" href="index.html">CoPal</a>            
             </li>
             <li class="nav-item">
               <a class="nav-link" href="blog.html">Blog</a>
@@ -88,57 +88,63 @@
       </nav>
     </div>
     <!-- header section end -->
-    <!-- client section start -->
-    <div class="about_section layout_padding">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6 padding_0">
-              <div class="bg_4">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="image_4"><img src="images/img-4.png"></div>
-                      <h1 class="readable_text">Our user</h1>
-                      <p class="lorem_text">CoPal is intended to be a place to go to, to have fun but also to learn to learn from colleagues and friends </p>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="image_4"><img src="images/img-4.png"></div>
-                      <h1 class="readable_text"> Copal user</h1>
-                      <p class="lorem_text">The need for CoPal comes into play, in this big game of community building.</p>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="image_4"><img src="images/img-4.png"></div>
-                      <h1 class="readable_text">Copal user</h1>
-                      <p class="lorem_text">   An attempted stair to create a community that will bring people closer than ever before. </p>
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <i class="fa fa-angle-left" style="font-size:44px" class="fas" aria-hidden="true"></i>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <i class="fa fa-angle-right" style="font-size:44px" class="fas" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          <div class="col-md-6 padding_0">
-            <div class="bg_5  ">
-              <div class="padding_left01">
-                <h1 class="about_text">Testimonial</h1>
-                <p class="many_text3">
-                  Find out what people are  <br> saying about CoPal, <br>
-                  our users have something to share
-              </p>              
-                <div class="read_bt1"><a href="#">Read More</a></div>
-              </div>
+     <!-- Contact Section Start -->
+<div class="contact_section layout_padding">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-md-6 padding_0">
+        <div class="bg_7">
+          <!-- Corrected Class Name -->
+          <div class="padding_left01">
+            <h1 class="contact_text1">Contact Us</h1>
+            <p class="content_text">You can contact us and share your thoughts and concerns.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Column -->
+      <div class="col-md-6 padding_0">
+        <div class="bg_2">
+          <div class="mail_section">
+            <!-- Input Fields -->
+            <input type="text" class="mail_text" placeholder="Name" id="name" name="name">
+            <input type="text" class="mail_text" placeholder="Phone Number" id="phone" name="phone">
+            <input type="email" class="mail_text" placeholder="Email" id="email" name="email">
+            <textarea class="massage_text" placeholder="Message" rows="5" id="message" name="message"></textarea>
+            
+            <!-- Buttons -->
+            <div class="button_container">
+              <button onclick="sendMail()" class="send_button">Send Email</button>
+              <button onclick="clearForm()" class="cancel_button">Cancel</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- client section end -->
-     <!-- footer section start -->
-     <div class="footer_section layout_padding">
+  </div>
+</div>
+
+<!-- Inline Styles -->
+<style>
+  /* Default padding for mobile */
+  .padding_left01 {
+    padding-left: 20px; /* Creates space between the left edge of the div and the text */
+  }
+
+  /* Reduced padding for desktop */
+  @media (min-width: 1024px) {
+    .padding_left01 {
+      padding-left: 180px; /* Less space between the left edge and the text */
+    }
+  }
+
+
+</style>
+<!-- Contact Section End -->
+
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
